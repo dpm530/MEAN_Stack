@@ -1,0 +1,5 @@
+<div *ngFor="let message of messages">
+   <h3>{{ message.user }}: {{ message.message }}</h3>
+   <app-comments (createCommentEvent)="createComment()" [message]="message"></app-comments>
+   <hr>
+</div>

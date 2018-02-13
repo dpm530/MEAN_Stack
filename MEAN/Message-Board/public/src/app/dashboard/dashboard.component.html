@@ -1,0 +1,12 @@
+<h1>Welcome {{ currentUser.name }}</h1>
+<button (click)="logout()">Logout</button>
+
+<h1>All Users</h1>
+<ul>
+   <li *ngFor="let user of users">
+      {{ user.name }}
+   </li>
+</ul>
+<h1>The Dojo Message Board</h1>
+<app-messages></app-messages>
+<app-comments></app-comments>

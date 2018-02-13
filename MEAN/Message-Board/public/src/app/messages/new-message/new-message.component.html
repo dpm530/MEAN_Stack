@@ -1,0 +1,12 @@
+<div>
+   <form (submit)="createMessage()">
+      <div>
+         <label>Message</label>
+         <input type="text" name="message" [(ngModel)]="newMessage.message">
+         <input type="submit"  value="Create">
+      </div>
+   </form>
+   <div>
+      <p *ngFor="let error of errors">{{ error }}</p>
+   </div>
+</div>

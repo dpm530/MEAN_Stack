@@ -1,0 +1,4 @@
+<app-new-message (createMessageEvent)="getMessages()"></app-new-message>
+<hr>
+<h1>Message List</h1>
+<app-list-messages (createMessageEvent)="getMessages()" (createCommentEvent)="getMessages()" [messages]="messages"></app-list-messages>

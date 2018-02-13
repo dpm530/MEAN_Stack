@@ -1,0 +1,12 @@
+<div>
+   <form (submit)="createComment()">
+      <div>
+         <label>Comment</label>
+         <input type="text" name="comment" [(ngModel)]="newComment.comment">
+         <input type="submit"  value="Create">
+      </div>
+   </form>
+   <div>
+      <p *ngFor="let error of errors">{{ error }}</p>
+   </div>
+</div>

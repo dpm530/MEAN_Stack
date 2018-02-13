@@ -1,0 +1,7 @@
+<div>
+   {{message | json}}
+</div>
+<div *ngFor="let comment of message.comments">
+   {{ comment | json }}
+   <p>{{ comment.user }}{{ comment.comment }}</p>
+</div>

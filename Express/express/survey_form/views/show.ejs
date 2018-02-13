@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <title></title>
+   </head>
+   <body>
+      <br>
+      <div class="container">
+
+         <div class="row">
+            <div class="col-1"></div>
+
+               <div class="col-5">
+
+                  <h1>Submitted Information</h1>
+                  <br>
+                  <div class="form-group">
+                     <label for="name"><strong>Name:</strong></label>
+                     <p name='name'><%= session.user %></p>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="location"><strong>Name:</strong></label>
+                     <p name='location'><%= session.location %></p>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="language"><strong>Name:</strong></label>
+                     <p name='language'><%= session.language %></p>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="comment"><strong>Name:</strong></label>
+                     <p name='language'><%= session.comment %></p>
+                  </div>
+                  <button><a href="/">Go Back</a></button>
+
+               </div>
+
+            <div class="col-1"></div>
+         </div>
+      </div>
+
+   </body>
+</html>
